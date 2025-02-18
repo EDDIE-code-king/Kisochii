@@ -173,3 +173,69 @@ body {
         font-size: 14px;
     }
 }
+/* Ensure navigation bar is responsive */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide regular navbar */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #00abf0;
+    }
+    
+    .navbar.active {
+        display: flex;
+    }
+    
+    .navbar a {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+/* Adjust home section */
+@media screen and (max-width: 768px) {
+    .home {
+        height: auto;
+        padding: 40px 10px;
+    }
+    
+    .home-content {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+/* Adjust iframe sizes for videos and mixes */
+@media screen and (max-width: 768px) {
+    .audio-mixes iframe,
+    .video-mixes iframe {
+        height: 180px;
+    }
+}
+
+/* Adjust slideshow for events */
+@media screen and (max-width: 768px) {
+    .events-slideshow .prev,
+    .events-slideshow .next {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+/* Make rate card table scrollable */
+@media screen and (max-width: 768px) {
+    .rate-card-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

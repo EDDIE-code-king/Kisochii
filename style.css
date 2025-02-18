@@ -421,572 +421,150 @@ span {
     align-items: center;
 }
 
-/* Music & Mixes section */
-#music-mixes {
-    padding: 50px;
-    background-color: #081b29;
-}
+/* Improved Responsive Styles */
 
-#music-mixes h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.heading {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-span {
-    color: #00abf0;
-}
-
-.mixes-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.audio-mixes, .video-mixes {
-    width: 45%;
-    margin-bottom: 30px;
-}
-
-/* Add space between video mixes */
-.video-mixes iframe {
-    margin-bottom: 10px; /* Adds space between each Vimeo embed */
-}
-
-.audio-mixes h3, .video-mixes h3 {
-    text-align: center;
-    color: boldgreen; /* Match your brand color */
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.audio-mixes iframe {
-    border: none;
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.music-links {
-    margin-top: 30px;
-}
-
-.music-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.music-links ul li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.music-links ul li a {
-    color: #00abf0;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.music-links ul li a:hover {
-    color: #fff;
-}
-
-/* Music Production Section */
-#music-production {
-    padding: 50px;
-    background-color: #081b29;
-    text-align: center;
-}
-
-#music-production h2 {
-    font-size: 2.5rem;
-    color: #00abf0;
-    margin-bottom: 20px;
-}
-
-#music-production p {
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 40px;
-}
-
-.production-services {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.service {
-    flex: 1;
-    min-width: 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #00abf0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: left;
-}
-
-.service h3 {
-    font-size: 1.8rem;
-    color: #081b29; /* Bold green color for DJ EDDIE 254 */
-    margin-bottom: 15px;
-}
-
-.service p {
-    font-size: 1.2rem;
-    color: #000000;
-}
-
-#music-production a {
-    color: #00abf0;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#music-production a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .production-services {
-        flex-direction: column;
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 80px;
+        padding: 12px 18px;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
-
-    .service {
-        max-width: 100%;
-    }
-}
-
-
-#promo-videos {
-    padding: 50px;
-    background-color: #081b29;
-}
-
-#promo-videos h2 {
-    text-align: center;
-    color: white; /* Match your brand color */
-    font-size: 3rem;
-    margin-bottom: 30px;
-}
-
-span {
-    color: #00abf0;
-}
-
-.promo-videos-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.promo-video {
-    width: 45%;
-    margin-bottom: 30px;
-    text-align: center; /* Center align the description */
-}
-
-.promo-video iframe {
-    width: 100%;
-    height: auto;
-    max-width: 640px;
-}
-
-.video-description {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: boldgreen; /* Match your brand color */
-    text-align: center;
-}
-
-#events {
-    padding: 50px;
-    background-color: #081b29;
-}
-
-#events h2 {
-    text-align: center;
-    color: #00abf0;
-    font-size: 3rem;
-    margin: 30px;
-}
-
-.events-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.events-slideshow {
-    width: 45%;
-    position: relative;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgb(35, 107, 83);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0, 1);
-}
-
-.event-slideshow h3 {
-    text-align: center;
-    color: #ededed;
-}
-
-.slideshow-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.slide {
-    display: none;
-    text-align: center;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.slide p {
-    margin-top: 10px;
-    color: #ededed;
-    font-size: 1.1rem;
-}
-
-.active2 {
-    display: block;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: boldgreen; /* Replace with your brand color */
-}
-
-#read-more-btn {
-background-color: #081b29;
-}
-
-#read-more-btn h2 {
-    text-align: center;
-    font-size: 3rem;
-    color: #ededed;
-    padding-bottom: 40px;
-}
-
-.read-more {
-    color: white; /* Text color, adjust as needed */
-    align-items: center;
-
-}
-
-span {
-    color: #00abf0;
-}
-
-.read-more h3 {
-    color: #00abf0;
-    text-align: center;
-    padding: 20px;
-    font-size: 2.3rem;
-}
-
-.read-more p {
-    text-align: start;
-}
-
-.two-column-section {
-    width: 100%; /* Section takes up full width */
-    padding: 20px; /* Add some padding for spacing */
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
-}
-
-.row {
-    display: flex; /* Flexbox to align columns side by side */
-    justify-content: space-between; /* Space between the columns */
-}
-  
-.column {
-    width: 48%; /* Each column takes roughly half of the row (adjust for spacing) */
-    padding: 10px; /* Add some padding inside the columns */
-    box-sizing: border-box; /* Ensure padding doesn't affect column width */
-}
-
-.column h4 {
-    font-size: 2rem;
-    color: #00abf0;
-    padding: 20px;
-    text-align: start;
-}
-
-.column p {
-    text-align: center;
-}
-
-.column p ul{
-    text-align: center;
-}
-  
-@media screen and (max-width: 768px) {
-    .row {
-      flex-direction: column; /* Stack columns vertically on smaller screens */
-    }
-  
-    .column {
-      width: 100%; /* Columns take full width on small screens */
-    }
-}
-
-/* DJ Services Rate Card Section */
-.rate-card-section {
-    padding: 50px;
-    background-color: #081b29;
-    text-align: center;
-}
-
-.rate-card-section h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #00abf0;
-}
-
-.rate-card-section p {
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 30px;
-}
-
-.rate-card-section span {
-    color: #fff;
-}
-
-.rate-card-table {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background-color: #fff;
-    text-align: left;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.rate-card-table thead th {
-    padding: 15px;
-    background-color: #00abf0; /* Bold green color */
-    color: #fff;
-    font-size: 1.2rem;
-}
-
-.rate-card-table tbody td {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-    font-size: 1rem;
-    color: #333;
-}
-
-.rate-card-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.rate-card-table tbody tr:hover {
-    background-color: #f1f1f1;
-}
-
-.rate-card-section p {
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #ffffff;
-}
-  
-@media (max-width: 768px) {
-    .rate-card-table {
-        width: 100%;
+    
+    .menu-button {
         display: block;
-        overflow-x: auto;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        background: none;
+        border: none;
+        z-index: 200;
     }
-    .rate-card-table thead {
+    
+    .navbar {
         display: none;
     }
-    .rate-card-table tr {
-        display: block;
-        margin-bottom: 20px;
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+        max-width: 172px;
+        height: 69px;
     }
-    .rate-card-table td {
-        display: block;
-        text-align: right;
-        padding-left: 50%;
+    
+    .logo-container img {
+        width: 46px;
+        height: 46px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 40px 10px;
         position: relative;
     }
-    .rate-card-table td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 15px;
-        font-weight: bold;
+    
+    .home-content {
+        width: 45%; /* Increased by 5% */
+        max-width: 525px; /* Increased by 5% */
         text-align: left;
+        position: relative;
+        top: 15%;
+        z-index: 2;
+        margin-bottom: 30px; /* Space between .home-content and .home-sci */
+    }
+    
+    .btn-box {
+        width: 80%;
+    }
+    
+    .home-imgHover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: 0.5s;
+        z-index: 0;
+        right: 0;
+        background-size: cover; /* Adjusted to cover .home background */
+        background-position: center;
     }
 }
 
-/* Rider Section */
-.rider-section {
-    padding: 50px;
-    background-color: #081b29;
-    text-align: center;
+@media screen and (max-width: 768px) {
+    .header {
+        height: 69px;
+        padding: 12px 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu-button {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        background: none;
+        border: none;
+        z-index: 200;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    
+    .logo-container {
+        max-width: 150px;
+        height: 57px;
+    }
+    
+    .logo-container img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo {
+        font-size: 18px;
+    }
+    
+    .home {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 40px 10px;
+        position: relative;
+    }
+    
+    .home-content {
+        width: 95%; /* Increased by 5% */
+        max-width: 420px; /* Increased by 5% */
+        text-align: center;
+        position: relative;
+        top: 15%;
+        z-index: 2;
+        margin-bottom: 30px; /* Space between .home-content and .home-sci */
+    }
+    
+    .btn-box {
+        width: 80%;
+    }
+    
+    .home-imgHover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: 0.5s;
+        z-index: 0;
+        right: 0;
+        background-size: cover; /* Adjusted to cover .home background */
+        background-position: center;
+    }
 }
-
-.rider-section h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.rider-section span {
-    color: #00abf0;
-}
-
-.rider-section p {
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 30px;
-}
-
-.rider-details {
-    max-width: 800px;
-    margin: 0 auto 40px;
-    text-align: left;
-}
-
-.rider-details h3 {
-    font-size: 1.8rem;
-    color: #00abf0; /* Bold green color */
-    margin-bottom: 15px;
-}
-
-.rider-details ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    font-size: 1.1rem;
-    color: #fff;
-}
-
-.rider-details ul li {
-    margin-bottom: 10px;
-}
-
-.rider-section p {
-    font-size: 1rem;
-    color: #00abf0;
-    margin-top: 20px;
-}
-
-/* Contact Section */
-.contact-section {
-    padding: 50px;
-    background-color: #081b29;
-    text-align: center;
-}
-
-.contact-section h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #00abf0;
-}
-
-.contact-section p {
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 30px;
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 1rem;
-    margin-bottom: 8px;
-    color: #ffffff;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.submit-btn {
-    background-color: #00abf0; /* Bold green color */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-    background-color: #32cd32;
-}
-
-.contact-info {
-    margin-top: 40px;
-}
-
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info li {
-    font-size: 1.1rem;
-    margin: 10px 0;
-}
-
-.contact-info a {
-    color: #32cd32;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-  
